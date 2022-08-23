@@ -62,7 +62,6 @@
   --ifm-navbar-background-color: var(--colors-dark-grey);
 }
 
-
 html[data-theme='dark'] .button {
   color: var(--colors-white);
 }
@@ -80,7 +79,6 @@ html[data-theme='dark'] .button--primary:hover {
 .button--lg {
   --ifm-button-size-multiplier: 1.5;
 }
-
 
 html .footer {
   margin-top: 4rem;
