@@ -2,63 +2,57 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
-const FeatureList = [
-  {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
-];
+import imageBanner from '../../../static/img/banner.png'
 
-function Feature({ Svg, title, description }) {
-  return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
+
 
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+        <div className={styles.contentCenter}>
+
+          <img className={styles.bannerCenter} src={imageBanner} alt='No Image' height={500} />
+
+          <h3 className={styles.textAlign}>A collection of packages to work with graphql server in dart and flutter.</h3>
+
+          <h2 className={styles.dBlock}>Introduction</h2>
+
+          <hr />
+          <div>
+            <p>
+              GraphQL brings many benefits, both to the client: devices will need fewer requests, and therefore reduce data usage.
+              And to the programmer: requests are arguable, they have the same structure as the request.
+            </p>
+            <p>
+              This project combines the benefits of GraphQL with the benefits of <span>Streams</span> in Dart to deliver a high-performance client.
+            </p>
+            <p>
+              The project took inspiration from the <a href='https://github.com/apollographql/apollo-client'>Apollo GraphQL client</a>, great work guys!
+            </p>
+
+          </div>
+
+          <h2 className={styles.dBlock}>Packages</h2>
+          <hr />
+
+          <div>
+            This is a Monorepo which contains the following packages:
+          </div>
+
+          <h2 className={styles.dBlock}>Utils Tools</h2>
+
+          <p>Around graphql_flutter are builds awesome tools like:</p>
+
+          <ul>
+            <li>  <a href=''> graphql_flutter_bloc</a> </li>
+            <li> <a href=''> graphql_codegen </a></li>
+          </ul>
+
+          <h2 className={styles.dBlock} >Features</h2>
+          <hr />
         </div>
       </div>
-    </section>
+    </section >
   );
 }

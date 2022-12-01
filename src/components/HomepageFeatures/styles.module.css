@@ -1,11 +1,40 @@
 .features {
   display: flex;
-  align-items: center;
+  justify-content: center;
   padding: 2rem 0;
   width: 100%;
 }
 
-.featureSvg {
-  height: 100px;
-  width: 100px;
+
+.dBlock {
+  display: block;
+}
+
+.textAlign {
+  display: block;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.contentCenter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bannerCenter {
+  width: 100%;
+  height: 600px;
+}
+
+hr {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+span {
+  color: black;
+  background-color: rgba(175, 184, 193, 0.2);
+  padding: .2em .4em;
+  border-radius: 5px;
 }
