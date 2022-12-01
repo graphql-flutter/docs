@@ -121,7 +121,7 @@ const config = {
           },
         ],
         // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-        copyright: `Copyright © ${new Date().getFullYear()} Nerdify.<br/>Built with 💙 by <a target="_blank" rel="noopener" aria-label="Nerdify" href="https://getnerdify.com">Nerdify 😎</a>.`,
+        copyright: `Copyright © ${new Date().getFullYear()} GraphQL Flutter.<br/>Built with 💙 by <a target="_blank" rel="noopener" aria-label="GraphQL Flutter" href="https://github.com/zino-hofmann/graphql-flutter">GraphQL Flutter 😎</a>.`,
       },
       prism: {
         additionalLanguages: ['bash', 'dart', 'yaml'],
